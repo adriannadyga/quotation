@@ -1,11 +1,12 @@
 'use strict'
 
 var tweetLink = "https://twitter.com/intent/tweet?text="; //link do wysyłania tweetów; po znaku = dodawana będzie treść tweeta za pomoca kodu js
+var prefix = "https://cors-anywhere.herokuapp.com/";
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"; //link do API Quotes on Design 
 
 //pobieranie cytatu
 function getQuote() {
-    fetch(quoteUrl, { cache: "no-store" }) //quateUrl - adres zapytania(link do API); cache: - wyłączenie możłiwości zaglądania do HTTP Cache
+    fetch(prefix + quoteUrl, { cache: "no-store" }) //quateUrl - adres zapytania(link do API); cache: - wyłączenie możłiwości zaglądania do HTTP Cache
         .then(function(resp) {
             return resp.json();
         })
