@@ -11,6 +11,7 @@ function getQuote() {
             return resp.json();
         })
         .then(createTweet); //funkcja tworząca tweeta
+        console.log(fetch());
 }
 
 //tworzenie tweeta
