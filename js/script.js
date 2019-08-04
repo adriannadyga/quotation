@@ -1,7 +1,7 @@
 'use strict'
 
-var tweetLink = "https://twitter.com/intent/tweet?text="; //link do wysyłania tweetów; po znaku = dodawana będzie treść tweeta za pomoca kodu js
 var prefix = "https://cors-anywhere.herokuapp.com/";
+var tweetLink = "https://twitter.com/intent/tweet?text="; //link do wysyłania tweetów; po znaku = dodawana będzie treść tweeta za pomoca kodu js
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"; //link do API Quotes on Design 
 
 //pobieranie cytatu
