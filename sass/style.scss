@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    body {
+        background-image: url(https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        main {
+            header {
+                padding: 50px 0;
+                h1 {
+                    font-size: 70px;
+                }
+            }
+            .box {
+                padding: 40px 0;
+                h2 {
+                    font-size: 30px;
+                }
+            }
+            .block {
+                button {
+                    margin-right: 30px;
+                    border: none;
+                    background-color: rgb(16, 167, 16);
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    cursor: pointer;  
+                    width: 240px;
+                    height: 60px;
+                    font-size: 16px;   
+                    &:hover {
+                        background-color: rgb(84, 167, 16);
+                    }     
+                }
+                .tweet {
+                    border: 1px solid #1DA1F2;
+                    background-color: #1DA1F2;
+                    padding: 21px 80px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: #ffffff;
+                    &:hover {
+                        background-color: rgb(29, 68, 242);
+                    }
+                }
+            }
+        }
+    }
+}
